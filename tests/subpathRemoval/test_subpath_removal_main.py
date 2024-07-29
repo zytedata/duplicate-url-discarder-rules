@@ -4,7 +4,7 @@ from duplicate_url_discarder.processors import SubpathRemovalProcessor
 from duplicate_url_discarder_rules import RULE_PATHS
 
 
-def test_rules():
+def test_subpath_removal_main_rules():
     rule_path = [
         path for path in RULE_PATHS if path.endswith("subpathRemoval/main.json")
     ]
