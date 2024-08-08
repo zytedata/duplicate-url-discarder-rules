@@ -1,6 +1,17 @@
 Changes
 =======
 
+0.2.0 (YYYY-MM-DD)
+------------------
+
+* Add new rules for:
+
+  * ``normalizer``: For all domains
+  * ``queryRemoval``: New domains and updated params on some old domains
+  * ``subpathRemoval``: For Amazon domains
+
+* Fix missing Amazon domains in some of its URL patterns.
+
 0.1.1 (2024-07-05)
 ------------------
 
