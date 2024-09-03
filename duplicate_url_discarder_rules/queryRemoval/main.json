@@ -26,9 +26,11 @@
   },
   {
     "args": [
-      "source",
+      "afsource",
+      "categoryId",
+      "faceout",
       "originalStore",
-      "categoryId"
+      "source"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -51,9 +53,11 @@
       "athpgid",
       "athstid",
       "athznid",
+      "classType",
       "com_cvv",
       "filters",
       "from",
+      "fulfillmentIntent",
       "selectedSellerId",
       "wmlspartner"
     ],
@@ -105,7 +109,8 @@
   },
   {
     "args": [
-      "googleShop"
+      "googleShop",
+      "srsltid"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -274,11 +279,12 @@
   },
   {
     "args": [
+      "childItemId",
       "msid",
-      "page",
       "navpath",
+      "page",
       "position",
-      "childItemId"
+      "utm_source"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -356,6 +362,7 @@
     "args": [
       "recommendation",
       "source",
+      "type",
       "viewcode"
     ],
     "order": 0,
@@ -467,8 +474,10 @@
   },
   {
     "args": [
+      "brandId",
       "lyceumGuid",
       "opre",
+      "option",
       "osp",
       "refccid"
     ],
@@ -635,11 +644,12 @@
   },
   {
     "args": [
-      "isFromSale",
+      "display",
+      "externalProductCodes",
       "fit",
       "intcmp",
+      "isFromSale",
       "noPopUp",
-      "display",
       "sale"
     ],
     "order": 0,
@@ -850,6 +860,7 @@
   },
   {
     "args": [
+      "athbdg",
       "from"
     ],
     "order": 0,
@@ -926,6 +937,7 @@
   },
   {
     "args": [
+      "aqi",
       "srsltid"
     ],
     "order": 0,
@@ -994,6 +1006,7 @@
       "notFound",
       "photo",
       "psm",
+      "recommended",
       "return",
       "source",
       "tagId",
@@ -1062,6 +1075,7 @@
   },
   {
     "args": [
+      "ch_id",
       "ch_type"
     ],
     "order": 0,
@@ -1201,7 +1215,9 @@
   },
   {
     "args": [
-      "page"
+      "page",
+      "yottly_online",
+      "yottly_recommender"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -1535,14 +1551,17 @@
   },
   {
     "args": [
-      "page",
-      "vn",
-      "itview",
-      "vnclk",
-      "itcurrpage",
-      "d",
+      "countrycode",
       "currency",
-      "countrycode"
+      "d",
+      "hsclk20386",
+      "hspos",
+      "itcurrpage",
+      "itview",
+      "page",
+      "plpSrc",
+      "vn",
+      "vnclk"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -1736,12 +1755,16 @@
   },
   {
     "args": [
-      "currency",
       "breadcrumb",
+      "country",
+      "currency",
       "origin",
       "recs_placement",
       "recs_strategy",
-      "country"
+      "utm_campaign",
+      "utm_channel",
+      "utm_medium",
+      "utm_source"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -1783,6 +1806,7 @@
       "cm_sp",
       "isDlp",
       "pla_country",
+      "rbe",
       "tdp"
     ],
     "order": 0,
@@ -1795,10 +1819,11 @@
   },
   {
     "args": [
-      "pr_rec_id",
       "pr_prod_strat",
+      "pr_rec_id",
       "pr_rec_pid",
-      "pr_ref_pid"
+      "pr_ref_pid",
+      "pr_seq"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -1900,8 +1925,8 @@
   },
   {
     "args": [
-      "t",
-      "l"
+      "l",
+      "t"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -1962,6 +1987,7 @@
       "notFound",
       "photo",
       "psm",
+      "recommended",
       "return",
       "source",
       "tagId",
@@ -2316,8 +2342,9 @@
   },
   {
     "args": [
-      "_trksid",
       "_trkparms",
+      "_trksid",
+      "hash",
       "iid"
     ],
     "order": 0,
@@ -2330,10 +2357,10 @@
   },
   {
     "args": [
-      "utm_id",
-      "type",
       "helion_utm",
-      "ident"
+      "ident",
+      "type",
+      "utm_id"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2369,16 +2396,16 @@
   },
   {
     "args": [
-      "zootopia_rec",
+      "cn",
+      "pi",
+      "pn",
+      "pr",
       "rk",
       "rri",
-      "pn",
-      "cn",
+      "si",
       "slot",
       "strategy",
-      "pr",
-      "pi",
-      "si"
+      "zootopia_rec"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2406,8 +2433,10 @@
   },
   {
     "args": [
-      "source",
-      "pid"
+      "cgid",
+      "dwvar_M40631-Master_height",
+      "pid",
+      "source"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2419,8 +2448,8 @@
   },
   {
     "args": [
-      "productName",
-      "pid"
+      "pid",
+      "productName"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2444,8 +2473,8 @@
   },
   {
     "args": [
-      "tabCode",
-      "pageId"
+      "pageId",
+      "tabCode"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2481,10 +2510,10 @@
   },
   {
     "args": [
-      "utm_source",
       "utm_campaign",
       "utm_content",
-      "utm_medium"
+      "utm_medium",
+      "utm_source"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2522,8 +2551,8 @@
   {
     "args": [
       "listrakMechandiseBlockId",
-      "listrakRecommendationIndex",
-      "listrakRecommendationBlockName"
+      "listrakRecommendationBlockName",
+      "listrakRecommendationIndex"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2547,9 +2576,9 @@
   },
   {
     "args": [
-      "recToken",
       "nav",
-      "pid"
+      "pid",
+      "recToken"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2678,6 +2707,158 @@
     "urlPattern": {
       "include": [
         "aliexpress.us"
+      ]
+    }
+  },
+  {
+    "args": [
+      "cgid"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "madewell.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "N",
+      "pos"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "marshalls.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "pr_prod_strat",
+      "pr_rec_id",
+      "pr_rec_pid",
+      "pr_ref_pid",
+      "pr_seq"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "thelifestyledco.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "source",
+      "utm_content",
+      "utm_medium",
+      "utm_source",
+      "utm_term"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "musinsa.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "adId",
+      "offer"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "maisonsdumonde.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      ""
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "evidea.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "click_source"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "rugs.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "limit",
+      "page"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "pcel.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "irclickid",
+      "product_sku"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "travismathew.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "BSCCN1",
+      "BSCPN",
+      "BSPRG",
+      "naver_code",
+      "utm_campaign",
+      "utm_content",
+      "utm_medium",
+      "utm_source",
+      "utm_term"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "29cm.co.kr"
+      ]
+    }
+  },
+  {
+    "args": [
+      "_sid"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "hometown.in"
       ]
     }
   }
