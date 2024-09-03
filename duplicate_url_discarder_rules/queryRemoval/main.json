@@ -2782,18 +2782,6 @@
   },
   {
     "args": [
-      ""
-    ],
-    "order": 0,
-    "processor": "queryRemoval",
-    "urlPattern": {
-      "include": [
-        "evidea.com"
-      ]
-    }
-  },
-  {
-    "args": [
       "click_source"
     ],
     "order": 0,
