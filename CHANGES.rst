@@ -1,7 +1,7 @@
 Changes
 =======
 
-0.3.0 (YYYY-MM-DD)
+0.3.0 (2024-09-18)
 ------------------
 
 * Rules for ``queryRemoval`` got 10 new domains and 18 existing domains have
