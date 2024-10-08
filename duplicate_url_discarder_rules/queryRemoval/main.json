@@ -42,6 +42,7 @@
   },
   {
     "args": [
+      "adUid",
       "adsRedirect",
       "athAsset",
       "athancid",
@@ -53,12 +54,16 @@
       "athpgid",
       "athstid",
       "athznid",
+      "bkt",
       "classType",
       "com_cvv",
       "filters",
       "from",
       "fulfillmentIntent",
+      "pos",
       "selectedSellerId",
+      "spQs",
+      "storeId",
       "wmlspartner"
     ],
     "order": 0,
@@ -360,6 +365,7 @@
   },
   {
     "args": [
+      "category",
       "recommendation",
       "source",
       "type",
@@ -1551,6 +1557,7 @@
   },
   {
     "args": [
+      "code",
       "countrycode",
       "currency",
       "d",
@@ -1560,6 +1567,8 @@
       "itview",
       "page",
       "plpSrc",
+      "sectionURL",
+      "srcType",
       "vn",
       "vnclk"
     ],
@@ -1969,7 +1978,9 @@
       "bdrecsId",
       "clickId",
       "isClearance",
-      "pfm"
+      "pfm",
+      "prdPV",
+      "storeIds"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2344,6 +2355,7 @@
     "args": [
       "_trkparms",
       "_trksid",
+      "edge",
       "hash",
       "iid"
     ],
@@ -2840,13 +2852,84 @@
   },
   {
     "args": [
-      "_sid"
+      "_pos",
+      "_sid",
+      "_ss"
     ],
     "order": 0,
     "processor": "queryRemoval",
     "urlPattern": {
       "include": [
         "hometown.in"
+      ]
+    }
+  },
+  {
+    "args": [
+      "bes",
+      "click_key",
+      "click_sum",
+      "etp",
+      "ga_order",
+      "ga_search_query",
+      "ga_search_type",
+      "ga_view_type",
+      "organic_search_click",
+      "pop"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "etsy.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "lang"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "dwr.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "sku"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "academy.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "entered_from"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "meesho.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "lpage"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "bettenreiter.at"
       ]
     }
   }
