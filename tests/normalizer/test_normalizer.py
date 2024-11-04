@@ -5,6 +5,7 @@ from duplicate_url_discarder_rules import RULE_PATHS
 
 
 def test_normalizer_main_rules():
+    assert RULE_PATHS is not None
     rule_path = [path for path in RULE_PATHS if path.endswith("normalizer/main.json")]
     assert len(rule_path) == 1
 

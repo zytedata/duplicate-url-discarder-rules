@@ -40,3 +40,15 @@ target-version = ["py39", "py310", "py311", "py312", "py313"]
 [tool.isort]
 profile = "black"
 multi_line_output = 3
+
+[tool.mypy]
+strict = true
+implicit_reexport = true
+
+[[tool.mypy.overrides]]
+module = "tests.*.*"
+disallow_untyped_defs = false
+
+[[tool.mypy.overrides]]
+module = "url_matcher"
+ignore_missing_imports = true
