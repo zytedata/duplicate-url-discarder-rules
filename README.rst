@@ -37,3 +37,14 @@ The rules can be imported via:
 
 It can then be used to configure the ``DUD_LOAD_RULE_PATHS`` setting of
 ``duplicate-url-discarder``.
+
+``RULE_PATHS`` contains all files shipped in this package. If you want to
+reduce the number of loaded rules to improve performance you can instead
+use one or more of the following variables:
+
+* ``RULE_PATHS_COMMON``: rules not specific to any data type.
+* ``RULE_PATHS_ARTICLE``: rules for article websites.
+* ``RULE_PATHS_PRODUCT``: rules for e-commerce websites.
+
+As all of them are lists, you can combine them (e.g.
+``RULE_PATHS_COMMON + RULE_PATHS_PRODUCT``).

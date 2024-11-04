@@ -2,7 +2,7 @@ import json
 
 from url_matcher import Patterns
 
-from duplicate_url_discarder_rules import RULE_PATHS
+from duplicate_url_discarder_rules import RULE_PATHS, RULE_PATHS_ARTICLE, RULE_PATHS_PRODUCT, RULE_PATHS_COMMON
 
 
 def test_rule_validity():
@@ -37,3 +37,11 @@ def test_rule_validity():
         assert (
             json.dumps(data, indent=2, sort_keys=True) == raw_text.rstrip()
         ), f"Check {path} for formatting issue"
+
+
+def test_rules_concat():
+    all_rules = RULE_PATHS_COMMON + RULE_PATHS_ARTICLE + RULE_PATHS_PRODUCT
+    assert isinstance(all_rules, list)
+    for path in all_rules:
+        assert isinstance(path, str)
+    assert set(all_rules) == set(RULE_PATHS)

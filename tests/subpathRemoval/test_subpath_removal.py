@@ -1,12 +1,12 @@
 from duplicate_url_discarder.url_canonicalizer import UrlCanonicalizer
-from duplicate_url_discarder.processors import QueryRemovalExceptProcessor
+from duplicate_url_discarder.processors import SubpathRemovalProcessor
 
 from duplicate_url_discarder_rules import RULE_PATHS
 
 
-def test_query_removal_except_main_rules():
+def test_subpath_removal_product_rules():
     rule_path = [
-        path for path in RULE_PATHS if path.endswith("queryRemovalExcept/main.json")
+        path for path in RULE_PATHS if path.endswith("subpathRemoval/product.json")
     ]
     assert len(rule_path) == 1
 
@@ -14,7 +14,7 @@ def test_query_removal_except_main_rules():
 
     assert len(canonicalizer.processors) == 1
     assert isinstance(
-        list(canonicalizer.processors.values())[0], QueryRemovalExceptProcessor
+        list(canonicalizer.processors.values())[0], SubpathRemovalProcessor
     )
 
     domains = [
@@ -43,13 +43,11 @@ def test_query_removal_except_main_rules():
     for domain in domains:
         assert (
             canonicalizer.process_url(
-                f"https://www.amazon.{domain}/some-text/dp/ASIN?p=1&q=2#frag"
+                f"https://www.amazon.{domain}/some-text/dp/ASIN?p=1#frag"
             )
-            == f"https://www.amazon.{domain}/some-text/dp/ASIN#frag"
+            == f"https://www.amazon.{domain}/dp/ASIN?p=1#frag"
         )
         assert (
-            canonicalizer.process_url(
-                f"https://www.amazon.{domain}/dp/ASIN?p=1&q=2#frag"
-            )
-            == f"https://www.amazon.{domain}/dp/ASIN#frag"
+            canonicalizer.process_url(f"https://www.amazon.{domain}/dp/ASIN?p=1#frag")
+            == f"https://www.amazon.{domain}/dp/ASIN?p=1#frag"
         )
