@@ -42,7 +42,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.13"]
-        tox-job: ["twine-check"]
+        tox-job: ["linters", "twine-check"]
 
     steps:
     - uses: actions/checkout@v4

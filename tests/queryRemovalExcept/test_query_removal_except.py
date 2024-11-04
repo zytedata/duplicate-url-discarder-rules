@@ -1,5 +1,5 @@
-from duplicate_url_discarder.url_canonicalizer import UrlCanonicalizer
 from duplicate_url_discarder.processors import QueryRemovalExceptProcessor
+from duplicate_url_discarder.url_canonicalizer import UrlCanonicalizer
 
 from duplicate_url_discarder_rules import RULE_PATHS
 

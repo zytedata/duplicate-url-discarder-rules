@@ -2,7 +2,12 @@ import json
 
 from url_matcher import Patterns
 
-from duplicate_url_discarder_rules import RULE_PATHS, RULE_PATHS_ARTICLE, RULE_PATHS_PRODUCT, RULE_PATHS_COMMON
+from duplicate_url_discarder_rules import (
+    RULE_PATHS,
+    RULE_PATHS_ARTICLE,
+    RULE_PATHS_COMMON,
+    RULE_PATHS_PRODUCT,
+)
 
 
 def test_rule_validity():

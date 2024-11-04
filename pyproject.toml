@@ -33,3 +33,10 @@ Source = "https://github.com/zytedata/duplicate-url-discarder-rules"
 
 [tool.setuptools.package-data]
 'duplicate_url_discarder_rules' = ['**/*.json']
+
+[tool.black]
+target-version = ["py39", "py310", "py311", "py312", "py313"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
