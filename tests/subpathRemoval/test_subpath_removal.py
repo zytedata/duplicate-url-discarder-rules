@@ -1,10 +1,11 @@
-from duplicate_url_discarder.url_canonicalizer import UrlCanonicalizer
 from duplicate_url_discarder.processors import SubpathRemovalProcessor
+from duplicate_url_discarder.url_canonicalizer import UrlCanonicalizer
 
 from duplicate_url_discarder_rules import RULE_PATHS
 
 
 def test_subpath_removal_product_rules():
+    assert RULE_PATHS is not None
     rule_path = [
         path for path in RULE_PATHS if path.endswith("subpathRemoval/product.json")
     ]

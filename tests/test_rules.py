@@ -2,10 +2,16 @@ import json
 
 from url_matcher import Patterns
 
-from duplicate_url_discarder_rules import RULE_PATHS, RULE_PATHS_ARTICLE, RULE_PATHS_PRODUCT, RULE_PATHS_COMMON
+from duplicate_url_discarder_rules import (
+    RULE_PATHS,
+    RULE_PATHS_ARTICLE,
+    RULE_PATHS_COMMON,
+    RULE_PATHS_PRODUCT,
+)
 
 
 def test_rule_validity():
+    assert RULE_PATHS is not None
     for path in RULE_PATHS:
         try:
             with open(path, "r") as f:
@@ -40,6 +46,7 @@ def test_rule_validity():
 
 
 def test_rules_concat():
+    assert RULE_PATHS is not None
     all_rules = RULE_PATHS_COMMON + RULE_PATHS_ARTICLE + RULE_PATHS_PRODUCT
     assert isinstance(all_rules, list)
     for path in all_rules:
