@@ -16,7 +16,7 @@ RULE_PATHS_COMMON: List[str] = []
 RULE_PATHS_ARTICLE: List[str] = []
 RULE_PATHS_PRODUCT: List[str] = []
 
-for path in RULE_PATHS:
+for path in RULE_PATHS or []:
     filename = Path(path).name
     if filename == "article.json":
         RULE_PATHS_ARTICLE.append(path)
