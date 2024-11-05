@@ -25,4 +25,4 @@ for path in RULE_PATHS or []:
     else:
         RULE_PATHS_COMMON.append(path)
 
-__version__ = "2024.10.10"
+__version__ = "2024.11.05"

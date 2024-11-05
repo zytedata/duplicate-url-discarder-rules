@@ -1,6 +1,19 @@
 Changes
 =======
 
+2024.11.05 (2024-11-05)
+-----------------------
+
+* Added Python 3.13 support.
+* Dropped Python 3.8 support.
+* Added rules for article websites.
+* Rules for ``queryRemoval`` got 7 new domains and 5 existing domains have
+  new parameters that were added.
+* Added ``RULE_PATHS_COMMON``, ``RULE_PATHS_ARTICLE`` and
+  ``RULE_PATHS_PRODUCT`` variables that can be used instead of ``RULE_PATHS``
+  to omit some sets of rules.
+* Added ``pre-commit`` and improved CI.
+
 2024.10.10 (2024-10-10)
 -----------------------
 
