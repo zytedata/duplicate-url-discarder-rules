@@ -61,6 +61,7 @@
       "from",
       "fulfillmentIntent",
       "pos",
+      "rd",
       "selectedSellerId",
       "spQs",
       "storeId",
@@ -427,6 +428,8 @@
   },
   {
     "args": [
+      "Kitchen",
+      "Sky",
       "magaza"
     ],
     "order": 0,
@@ -580,6 +583,7 @@
   },
   {
     "args": [
+      "searchTerm",
       "v2"
     ],
     "order": 0,
@@ -867,7 +871,8 @@
   {
     "args": [
       "athbdg",
-      "from"
+      "from",
+      "selectedSellerId"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2316,7 +2321,12 @@
   },
   {
     "args": [
-      "srsltid"
+      "gad_source",
+      "srsltid",
+      "utm_campaign",
+      "utm_medium",
+      "utm_source",
+      "utm_term"
     ],
     "order": 0,
     "processor": "queryRemoval",
@@ -2930,6 +2940,103 @@
     "urlPattern": {
       "include": [
         "bettenreiter.at"
+      ]
+    }
+  },
+  {
+    "args": [
+      "pdp_filters"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "mercadolivre.com.br"
+      ]
+    }
+  },
+  {
+    "args": [
+      "clickCSR"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "sainsburys.co.uk"
+      ]
+    }
+  },
+  {
+    "args": [
+      "pr_prod_strat",
+      "pr_rec_id",
+      "pr_rec_pid",
+      "pr_ref_pid",
+      "pr_seq"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "setactive.co"
+      ]
+    }
+  },
+  {
+    "args": [
+      "gad_source",
+      "gclid",
+      "keyword",
+      "matchtype",
+      "placement",
+      "storeContext",
+      "target",
+      "utm_campaign",
+      "utm_medium",
+      "utm_source"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "myntra.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "article"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "jysk.pt"
+      ]
+    }
+  },
+  {
+    "args": [
+      ""
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "evidea.com"
+      ]
+    }
+  },
+  {
+    "args": [
+      "number"
+    ],
+    "order": 0,
+    "processor": "queryRemoval",
+    "urlPattern": {
+      "include": [
+        "sportspar.de"
       ]
     }
   }
