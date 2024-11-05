@@ -1,7 +1,7 @@
 Changes
 =======
 
-YYYY.MM.DD (YYYY-MM-DD)
+2024.11.05 (2024-11-05)
 -----------------------
 
 * Added Python 3.13 support.
